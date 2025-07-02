@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Match en Direct</title>
+<link rel="stylesheet" href="matchlive.css">
+       <script>
+        function showMatches(id) {
+            document.querySelectorAll('.match-list').forEach(el => el.style.display = 'none');
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>⚽ Regarder les Matchs en Direct</h1>
+        <p>Sélectionnez une catégorie pour accéder aux meilleurs sites de streaming.</p>
+        
+        <div class="category">
+            <h2>📲 Réseaux Sociaux</h2>
+            <div class="links">
+                <a href="#" class="link" onclick="showMatches('matches-facebook')">Facebook</a>
+                <a href="#" class="link" onclick="showMatches('matches-twitter')">Twitter</a>
+                <a href="#" class="link" onclick="showMatches('matches-youtube')">YouTube</a>
+            </div>
+            <div id="matches-facebook" class="match-list">
+                <div class="match">Match 1 - <a href="#">Regarder ici</a></div>
+                <div class="match">Match 2 - <a href="#">Regarder ici</a></div>
+            </div>
+            <div id="matches-twitter" class="match-list">
+                <div class="match">Match 1 - <a href="#">Regarder ici</a></div>
+            </div>
+            <div id="matches-youtube" class="match-list">
+                <div class="match">Match 1 - <a href="#">Regarder ici</a></div>
+            </div>
+        </div>
+        
+        <div class="category">
+            <h2>📺 Sites de Streaming</h2>
+            <div class="links">
+                <a href="#" class="link" onclick="showMatches('matches-livetv')">LiveTV</a>
+                <a href="#" class="link" onclick="showMatches('matches-rojadirecta')">RojaDirecta</a>
+                <a href="#" class="link" onclick="showMatches('matches-streamonsport')">Streamonsport</a>
+            </div>
+            <div id="matches-livetv" class="match-list">
+                <div class="match">Match 1 - <a href="#">Regarder ici</a></div>
+            </div>
+            <div id="matches-rojadirecta" class="match-list">
+                <div class="match">Match 1 - <a href="#">Regarder ici</a></div>
+            </div>
+            <div id="matches-streamonsport" class="match-list">
+                <div class="match">Match 1 - <a href="#">Regarder ici</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
